@@ -66,7 +66,7 @@ resource "null_resource" "register" {
   }
   provisioner "remote-exec" {
     inline = [
-      "SUSEConnect -r INTERNAL-USE-ONLY-c250f564d7f60c6d",
+      "SUSEConnect -r XXXXX",
       "zypper -n install lsb-release corosync pacemaker apache2 wget",
       "corosync-keygen -l"
     ]
